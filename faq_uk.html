@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Augusto">
+    <meta name="description"
+        content="Sky Nexus, Um jogo de ficçao cientifica em pixel art 2d. açao e aventura, run and gun">
+    <meta name="keywords" content="Game, jogo, pixel art, 2d">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="icon" href="logo/Logo_Sky_Nexus.svg">
+
+    <link rel="stylesheet" href="stylenexus.css">
+    <title>FAQ</title>
+
+    <style>
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('img/banner.png') repeat-x;
+            background-size: auto 100%;
+            animation: moveParallax 20s linear infinite;
+            /* controla velocidade */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 0px;
+            margin-top: 4rem;
+            overflow: hidden;
+            margin-bottom: 5rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav id="nav-menu" class="navbar">
+
+            <a href="index.html" class="logo">
+                <img src="logo/Logo_Sky_NexusBranco02.png" alt="Sky Nexus Logo">
+            </a>
+            <!-- Menu Hamburguer -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-btn"> ☰</label>
+
+            <!-- CONSOLES no NAV -->
+            <div class="console-nav">
+                <a href="index.html"><img src="img/Consoles_IMG/xbox-SVG.svg" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/Switch-PNG.png" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/Steam-PNG.png" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/ItchIo_PNG.png" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/EpicGames-13.png" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/PlayStation-16.png" alt=""></a>
+            </div>
+            <!-- NAV principal entre páginas -->
+            <ul class="nav-links">
+                <li><a href="index.html">
+                        <img src="img/links_img/Btn_Home02.png" alt="Inicio">
+                    </a></li>
+                <li><a href="#">
+                        <img src="img/links_img/Btn_Play.png" alt="Jogar demo">
+                    </a></li>
+                <li><a href="faq.html">
+                        <img src="img/links_img/Btn_FAQ.png" alt="perguntas e respostas">
+                    </a></li>
+                <li><a href="contato.html">
+                        <img src="img/links_img/Btn_Contato.png" alt="entre em contato">
+                    </a></li>
+
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <div class="pelicula">
+
+            </div>
+            <!-- Link bandeirad de Idiomas -->
+            <div class="bandeiras">
+                <a href="index_uk.html"><img src="img/bandeirinhas/ReinoUnido148.png" alt="idioma para ingles"></a>
+                <a href="faq_jp.html"><img src="img/bandeirinhas/Japao148.png" alt="idioma japones"></a>
+                <a href="index.html"><img src="img/bandeirinhas/Brasil148.png" alt="idioma portugues"></a>
+
+            </div>
+            <div class="container-hero">
+                <h1>FAQ</h1>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+        </section>
+    </header>
+    <main class="container-faq">
+        <div class="faq-text">
+            <h3>What is Sky Nexus?</h3>
+            <p>Sky Nexus is a 2D pixel-art action and adventure run-and-gun game. Explore artificial planets, face
+                biomechanical enemies, and dive into an epic science-fiction story set in the year 5605.</p>
+        </div>
+
+        <div class="faq-text">
+            <h3>On which platforms will Sky Nexus be available?</h3>
+            <p>The game will be released for PC (Steam, Epic Games, Itch.io), Nintendo Switch, Xbox and PlayStation.</p>
+        </div>
+
+        <div class="faq-text">
+            <h3>Do I need to pay to play the demo?</h3>
+            <p>No! The Sky Nexus demo is completely free and allows you to experience a few stages and mechanics before
+                the official release.</p>
+        </div>
+
+        <div class="faq-text">
+            <h3>Can I play in English or Japanese?</h3>
+            <p>Yes! Sky Nexus offers support for multiple languages, including Portuguese, English and Japanese.</p>
+        </div>
+
+        <div class="faq-text">
+            <h3>Will Sky Nexus have multiplayer?</h3>
+            <p>No. Sky Nexus is a single-player game, focused on a narrative experience and individual action, allowing
+                you to explore the story and mechanics at your own pace.</p>
+        </div>
+
+        <div class="faq-text">
+            <h3>What are the minimum PC requirements?</h3>
+            <p>Operating System: Windows 10 <br>
+                Processor: Intel i3 / AMD Ryzen 3 <br>
+                RAM: 4GB <br>
+                Graphics Card: Intel HD 4000 or equivalent <br>
+                Storage: 2GB</p>
+        </div>
+
+        <div class="faq-text">
+            <h3>How does the weapon system work?</h3>
+            <p>NanoRector 9: basic single-shot weapon with infinite ammunition.
+
+                Tri-Shot: fires 3 cone-shaped projectiles to hit multiple enemies.
+
+                PlasmaBeam: continuous plasma beam that deals high damage.
+
+                Raptor-Lock / Viper-M: missiles that track enemies.
+
+                FlameBurst: unleashes continuous flames using animation prefabs. You can switch weapons by collecting
+                power-ups scattered throughout the levels.</p>
+        </div>
+
+        <div class="faq-text">
+            <h3>Does the game have drones or companions?</h3>
+            <p>Yes! Emily is accompanied by drones called Companions, each with specific functions:
+
+                Satori: analyses the environment and predicts enemy routes.
+
+                Inori: protective and sensitive to Emily’s condition, provides defensive support.
+
+                Kagero: an aggressive drone designed for quick attacks.
+
+                Hikari: illuminates areas and helps detect hidden enemies.</p>
+        </div>
+
+        <div class="faq-text">
+            <h3>How do power-ups and upgrades work?</h3>
+            <p>You collect power-ups to:
+                Change weapons.
+                Recharge energy.</p>
+        </div>
+
+        <div class="faq-text">
+            <h3>Which controls are supported?</h3>
+            <p>Keyboard and mouse: standard for PC.
+                Gamepad: compatible with controllers such as PS5, Xbox and others.
+                Shooting and movement are independent, allowing free aiming while moving.</p>
+        </div>
+
+        <div class="faq-text">
+            <h3>Will I receive game updates after purchasing?</h3>
+            <p>Yes! Everyone who purchases the digital copy will have access to future updates at no additional cost.
+            </p>
+        </div>
+
+        <div class="faq-text">
+            <h3>Which controls are supported?</h3>
+            <p>Keyboard and mouse: standard for PC.
+                Gamepad: compatible with controllers such as PS5, Xbox and others.
+                Shooting and movement are independent, allowing free aiming while moving.</p>
+        </div>
+
+
+    </main>
+
+    <footer class="footer-back">
+        <nav class="footer">
+            <img src="img/particulas/aether-bloom.png" alt="">
+            <img src="img/E10plus.png" alt="">
+            <img src="img/SKY NEXUS.png" alt="">
+        </nav>
+        <div class="footer-text">
+            <div class="footer-text-um">
+                <p>Fantasy Violence,</p>
+                <p>Alcohol Reference,</p>
+                <p>Mild Language</p><br>
+            </div>
+            <p>www.facebook.com/skynexus.com</p>
+            <p>Sky Nexus © Augusto Ramos 2023-2025. All rights reserved.v</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

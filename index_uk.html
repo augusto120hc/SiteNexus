@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Augusto">
+    <meta name="description"
+        content="Sky Nexus, Um jogo de ficçao cientifica em pixel art 2d. açao e aventura, run and gun">
+    <meta name="keywords" content="Game, jogo, pixel art, 2d">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="icon" href="logo/Logo_Sky_Nexus.svg">
+
+    <link rel="stylesheet" href="stylenexus.css">
+    <title>Sky Nexus</title>
+
+
+    <style>
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('img/banner.png') repeat-x;
+            background-size: auto 100%;
+            animation: moveParallax 20s linear infinite;
+            /* controla velocidade */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 0px;
+            margin-top: 4rem;
+            overflow: hidden;
+            margin-bottom: 5rem;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <header>
+        <nav id="nav-menu" class="navbar">
+
+            <a href="index.html" class="logo">
+                <img src="logo/Logo_Sky_NexusBranco02.png" alt="Sky Nexus Logo">
+            </a>
+
+            <!-- Menu HAMBURGUER  -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-btn"> ☰</label>
+
+            <!-- CONSOLES no NAV -->
+            <div class="console-nav">
+                <a href="index.html"><img src="img/Consoles_IMG/xbox-150.png" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/Switch-PNG.png" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/Steam-PNG.png" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/ItchIo_PNG.png" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/EpicGames-13.png" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/PlayStation-16.png" alt=""></a>
+            </div>
+            <!-- NAV principal entre páginas -->
+            <ul class="nav-links">
+                <li><a href="index.html">
+                        <img src="img/links_img/Btn_Home02.png" alt="Inicio">
+                    </a></li>
+                <li><a href="emconstrucao.html">
+                        <img src="img/links_img/Btn_Play.png" alt="Jogar demo">
+                    </a></li>
+                <li><a href="faq.html">
+                        <img src="img/links_img/Btn_FAQ.png" alt="perguntas e respostas">
+                    </a></li>
+                <li><a href="contato.html">
+                        <img src="img/links_img/Btn_Contato.png" alt="entre em contato">
+                    </a></li>
+
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <div class="pelicula">
+
+            </div>
+            <!-- Link bandeirad de Idiomas -->
+            <div class="bandeiras">
+                <a href="index_uk.html"><img src="img/bandeirinhas/ReinoUnido148.png" alt="idioma para ingles"></a>
+                <a href="index_jp.html"><img src="img/bandeirinhas/Japao148.png" alt="idioma japones"></a>
+                <a href="index.html"><img src="img/bandeirinhas/Brasil148.png" alt="idioma portugues"></a>
+
+            </div>
+            <div class="container-hero">
+                <h1>Sky Nexus</h1>
+                <h2>スカイ・ネクサス</h2>
+                <div class="w-selene">
+                    <div id="typewriter"></div>
+                    <div class="selene">
+                        <img src="img/SeleneROXO.gif" alt="">
+                    </div>
+                </div>
+
+                <div id="typewriter"></div>
+            </div>
+
+        </section>
+    </header>
+
+
+
+    <!-- VIDEO INDEX -->
+    <main class="container-main">
+        <section class="video-index">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed//WaJu72z0NsI?si=Oj2slc3GxP0hGsgQvq=hd720" frameborder="0">
+                </iframe>
+            </div>
+        </section>
+        <!-- CONSOLES links depois do video Principal -->
+        <section class="consoles">
+            <div class="console">
+                <img src="img/Consoles_IMG/xbox-150.png" alt="">
+                <p>Xbox</p>
+            </div>
+            <div class="console sw">
+                <img src="img/Consoles_IMG/Switch-PNG150.png" alt="">
+                <p>Swicth</p>
+            </div>
+            <div class="console st">
+                <img src="img/Consoles_IMG/Steam-PNG150.png" alt="">
+                <p>Steam</p>
+            </div>
+            <div class="console it"><img src="img/Consoles_IMG/ItchIo_PNG150.png" alt="">
+                <p>Itchi Io</p>
+            </div>
+            <div class="console ep"><img src="img/Consoles_IMG/EpicGames-150.png" alt="">
+                <p>Epic Games</p>
+            </div>
+            <div class="console ps"><img src="img/Consoles_IMG/PlayStation-150.png" alt="">
+                <p>Playstation</p>
+            </div>
+        </section>
+        <!-- CARDS Personagens Index -->
+        <section class="personagens">
+            <div class="person-emily">
+                <img src="img/personagens/emilyGalery.png" alt="">
+                <div class="emily-text">
+                    <h2>Emily Blake</h2>
+                    <p>
+                        Emily Blake is more than a soldier — she is the mind that bridges humanity and the abyss.
+                        Born on an artificial world and forged in the chaos of the Fifth Wave, Emily rose to become the
+                        foremost Cybernetic Specialist of Base 42.
+                    </p>
+                </div>
+            </div>
+
+            <div class="person-megan">
+                <img src="img/personagens/Megan.png" alt="">
+                <div class="emily-text">
+                    <h2>Megan Blake</h2>
+                    <p>
+                        Megan serves as the field specialist who accompanies Emily during several key moments of the
+                        campaign. Thanks to the nanotechnology she developed herself, Megan is able to analyse the
+                        environment, detect traces of enemy nanoparticles, and anticipate ambushes.
+                    </p>
+                </div>
+            </div>
+            <div class="person-razen">
+                <img src="img/personagens/RazenEvinPersonagem.png" alt="">
+
+                <div class="emily-text">
+                    <h2>Razen Evin</h2>
+                    <p>
+                        A veteran of the 3rd and 4th Wave, he has witnessed entire colonies vanish into the silence of
+                        space — and carries each loss like a scar that keeps him moving forward. He now serves as the
+                        captain of Selene Base’s Advanced Defence Units.
+                    </p>
+                </div>
+            </div>
+            <div class="person-grow">
+                <img src="img/personagens/KoutetsuPersonagem.png" alt="">
+                <div class="emily-text">
+                    <h2>Koutetsu Grow</h2>
+                    <p>
+                        Koutetsu Grow is not merely the final enemy of Sky Nexus — he is the very reason the war began.
+
+                        Forged within a living laboratory at the core of the Vesta asteroid, Grow is the first truly
+                        perfect hybrid between biological matter and interdimensional technology. His body is a fusion
+                        of organic metal, circuits that breathe, and muscles capable of regenerating within seconds.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTROLE -->
+        <section class="controle">
+            <div>
+                <img src="img/controleSemFundoUK.png" alt="">
+            </div>
+        </section> <br>
+
+        <section class="controle-teclado">
+            <div>
+                <img src="img/tecladoMouse/tecladoMouseUK.png" alt="">
+            </div>
+        </section> <br>
+
+        <!-- SEÇÂO DE ARMAS -->
+        <section class="armas">
+            <div class="armas01">
+                <!-- Plasma basico -->
+                <div class="minibox">
+                    <div class="plasma01">
+                        <img src="img/Armas/Laser_00-export.png" alt="">
+                        <img src="img/Projeteis/plasma0.png" alt="">
+                    </div>
+                    <div class="texto-armas">
+                        <p><strong>NanoRector 9</strong> - It is simply Emily’s basic weapon — the starting point of all
+                            her combat power. Designed to never fail, the NanoRector 9 features infinite ammunition.</p>
+                    </div>
+                </div>
+                <!-- Plasma cone 3 -->
+                <div class="minibox">
+                    <div class="plasma01">
+                        <img src="img/Armas/Metralhadora02.png" alt="">
+                        <img src="img/Projeteis/plasma02.png" alt="">
+
+                    </div>
+                    <div class="texto-armas">
+                        <p>Tri-Shot - It fires three cone-shaped projectiles, covering a wider area and hitting multiple
+                            nearby enemies.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Laser Rosa -->
+            <div class="armas01">
+                <div class="minibox">
+                    <div class="plasma01">
+                        <img src="img/Armas/Laser.png" alt="">
+                        <img src="img/Projeteis/laser02.png" alt="">
+                    </div>
+                    <div class="texto-armas">
+                        <p><strong>PlasmaBeam</strong> - The PlasmaBeam releases an uninterrupted stream of
+                            super-ionised energy, capable of tearing through armour and disintegrating living matter
+                            within seconds. While active, the beam maintains its maximum intensity.</p>
+                    </div>
+                </div>
+                <!-- Lança Missel base -->
+                <div class="minibox">
+                    <div class="plasma01">
+                        <img src="img/Armas/lanca-meno01-export.png" alt="">
+                        <img src="img/Projeteis/missel01.png" alt="">
+
+                    </div>
+                    <div class="texto-armas">
+                        <p>Raptor-3 - An experimental launcher engineered for total supremacy in open-field combat.
+                            The system deploys three missiles that strike simultaneously, forming a destructive swarm
+                            that surges forward at high speed.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Foguete Rosa -->
+
+            <div class="armas01">
+                <div class="minibox">
+                    <div class="plasma01">
+                        <img src="img/Armas/lanca-foguete03.png" alt="">
+                        <img src="img/Projeteis/Missel03.png" alt="">
+                    </div>
+                    <div class="texto-armas">
+                        <p>Raptor-Lock - Each missile slices through the air at extreme speed, tracking enemy movements
+                            with precision. A weapon designed not just to attack… but to ensure nothing escapes alive.
+                        </p>
+                    </div>
+                </div>
+                <!-- Foguete Azul -->
+                <div class="minibox">
+
+                    <div class="plasma01">
+                        <img src="img/Armas/lanca-chama.png" alt="">
+                        <img src=" img/Projeteis/flamesPartes.png" alt="">
+
+                    </div>
+                    <div class="texto-armas">
+                        <p>FlameBurst - Releases a continuous stream of scorching flames, burning everything in its
+                            path. It uses an animated model instead of a particle system to deliver a more intense and
+                            visceral effect.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Metralhadora Plasma 4 -->
+            <div class="armas01">
+                <div class="minibox">
+                    <div class="plasma01">
+                        <img src="img/Armas/plasma02.png" alt="">
+                        <img src="img/Projeteis/plasma03.png" alt="">
+                    </div>
+                    <div class="texto-armas">
+                        <p>Overload 4 - Fires four incandescent projectiles per click, reaching up to eleven units of
+                            distance on the field.
+                            Each shot unleashes a searing beam of energy that cuts through the air with precision and
+                            impact.</p>
+                    </div>
+                </div>
+                <!-- Foguete Azul -->
+                <div class="minibox">
+                    <div class="plasma01">
+                        <img src="img/Armas/lanca-foguete02.png" alt="">
+                        <img src="img/Projeteis/missel02.png" alt="">
+
+                    </div>
+                    <div class="texto-armas">
+                        <p>Viper-M - A launcher featuring advanced homing missiles that track targets with precision.
+                            Each shot releases projectiles with a moderate firing rate, but equipped with pursuit
+                            intelligence — capable of striking even those who attempt to flee the battlefield.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- VIDEOS FASES -->
+        <section class="video-fases">
+            <div class="video-fase-um">
+                <video src="video-index/fase-um-triler.mp4" controls></video>
+            </div>
+            <section class="bloco-aside">
+                <div class="fase-um-img01">
+                    <img src="img/cena01.png" alt="">
+                </div>
+                <div class="fase-um-img02">
+                    <img src="img/cena03.png" alt="">
+                </div>
+            </section>
+        </section>
+
+        <!-- VIDEOS FASES Dois-->
+        <section class="video-fases">
+            <div class="video-fase-um">
+                <video src="video-index/fase-dois-triler.mp4" controls></video>
+            </div>
+            <section class="bloco-aside">
+                <div class="fase-um-img01">
+                    <img src="img/img-index/cena-fase-dois01.png" alt="">
+                </div>
+                <div class="fase-um-img02">
+                    <img src="img/img-index/cena536.png" alt="">
+                </div>
+            </section>
+        </section>
+
+        <!-- HISTORIA do Jogo -->
+        <section class="historia">
+            <div class="borda-historia">
+                <div class="back-historia">
+                    <img src="img/img-conceito600.png" alt="">
+                </div>
+                <div class="mais">
+                    <div class="historia-text">
+                        <h2>Concept</h2>
+                        <p>
+                            In the year 5605, humanity survives on an artificial planet known as SELENE, after centuries
+                            of
+                            interplanetary wars and cosmic collapses. The vital energy that drives the universe —
+                            Nanoparticles —
+                            has become the most coveted resource among civilisations.
+                        </p>
+                    </div>
+
+                    <!-- Texto oculto -->
+
+                    <div class="extra-text">
+                        <p>
+                            However, upon reaching the cracked surface of Vesta, Emily realises that enemy forces have
+                            already
+                            begun manipulating the gravitational core. Biomechanical creatures patrol every sector,
+                            and time itself seems to warp around her…
+                        </p>
+                    </div>
+                    <button class="ler-mais-btn"> <strong>+ ▼</strong></button>
+                </div>
+
+            </div>
+        </section>
+        <!-- INICIO - 5 Onda -->
+        <section class="historia historia02">
+            <div class="borda-historia">
+                <div class="back-historia">
+                    <img src="img/img-conceito600.png" alt="">
+                </div>
+                <div class="mais">
+                    <div class="historia-text">
+                        <h2>Beginning – 5th Wave</h2>
+                        <p>
+                            Decades after the collapse of the ancient human colonies, an event known as the 5th Wave
+                            changed
+                            the fate of the galaxy. Two Gravitational Singularities collided, opening a dimensional
+                            vortex
+                            from which biomechanical creatures emerged, carrying an unknown form of technology.
+                        </p>
+                    </div>
+
+                    <!-- Texto oculto -->
+                    <div class="extra-text">
+                        <p>
+                            From that moment on, the fabric of space-time was never the same again. Entire regions began
+                            to suffer
+                            chronic distortions, where gravity fluctuated like a living tide and fragments of parallel
+                            realities briefly
+                            overlapped.
+                        </p>
+                        <!-- <button class="ler-mais-btn">Ler mais ▼</button> -->
+                    </div>
+                    <button class="ler-mais-btn"> <strong>+ ▼</strong></button>
+                </div>
+
+            </div>
+        </section>
+        <!-- MEIO -->
+        <section class="historia">
+            <div class="borda-historia">
+                <div class="back-historia">
+                    <img src="img/img-conceito600.png" alt="">
+                </div>
+                <div class="mais">
+                    <div class="historia-text">
+                        <h2>Middle</h2>
+                        <p>
+                            When signs of dimensional activity are detected on Asteroid Vesta, Emily is summoned by
+                            Commander Raze Evin, a veteran survivor of the 4th Wave. The mission: prevent Koutetsu
+                            Mobile,
+                            leader of the alien fleet, from reactivating the temporal vortex.
+                        </p>
+                    </div>
+
+                    <!-- Texto oculto -->
+
+                    <div class="extra-text">
+                        <p>
+                            Long-range sensors detect gravitational fluctuations identical to those recorded moments
+                            before the fall of the Helion Prime colonies.
+                        </p>
+                        <!-- <button class="ler-mais-btn">Ler mais ▼</button> -->
+                    </div>
+                    <button class="ler-mais-btn"> <strong>+ ▼</strong></button>
+                </div>
+
+            </div>
+        </section>
+        <!-- CLIMAX -->
+        <section class="historia historia02">
+            <div class="borda-historia">
+                <div class="back-historia">
+                    <img src="img/img-conceito600.png" alt="">
+                </div>
+                <div class="mais">
+                    <div class="historia-text">
+                        <h2>Climax — The Confrontation with Koutetsu Grow</h2>
+                        <p>
+                            After crossing cosmic ruins and alien biolaboratories, Emily reaches the heart of Vesta,
+                            a suspended city carved within the living rock of the asteroid. There, she faces the
+                            colossus Koutetsu Mobile,
+                            an entity that blends flesh, iron, and dark energy.
+                        </p>
+                    </div>
+
+                    <!-- Texto oculto -->
+
+                    <div class="extra-text">
+                        <p>
+                            The air around her vibrates as if every molecule were trying to flee the place.
+                            Gravity twists into invisible whirlwinds, making fragments of stone float and collide
+                            slowly, creating an echo that seems to come from another Era.
+                        </p>
+                    </div>
+                    <button class="ler-mais-btn"> <strong>+ ▼</strong></button>
+                </div>
+
+            </div>
+        </section>
+        <!-- FIM -->
+        <section class="historia">
+            <div class="borda-historia">
+                <div class="back-historia">
+                    <img src="img/img-final.png" alt="">
+                </div>
+                <div class="mais">
+                    <div class="historia-text">
+                        <h2>Final</h2>
+                        <p>
+                            Exhausted, Emily returns to the ship.
+                            The explosion of Vesta releases a colossal wave of Nanoparticles,
+                            which spreads across the entire sector of space.
+                            Civilisations 45,000 km away absorb the energy — and with it, a fragment of the temporal
+                            propulsion system
+                            that had been activated moments before the destruction.
+                        </p>
+                    </div>
+
+                    <!-- Texto oculto -->
+
+                    <div class="extra-text">
+                        <p style="color:#ff40a9;">
+                            For a few seconds, everything seems to stabilise…
+                            But then, something impossible happens…
+                        </p>
+
+                        <!-- <button class="ler-mais-btn">Ler mais ▼</button> -->
+                    </div>
+                    <button class="ler-mais-btn"> <strong>+ ▼</strong></button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAIXA Preta com Botao JogarDEMO -->
+        <section class="play-demo">
+            <div class="borda-faixa">
+                <img src="img/EmlyIdleGIF.gif" alt="">
+
+                <a href="emconstrucao.html">
+                    <img src="img/links_img/Btn_PlayDemo.png" alt="">
+                </a>
+
+                <!-- <img src="logo/Logo_Sky_NexusBranco200.png" alt="Logo de Sky Nexus colorido" class="play-demo-logo"> -->
+                <img src="img/megan_GIF.gif" alt="">
+
+            </div>
+        </section>
+        <!-- Particulas -->
+        <section class="particulas">
+            <img src="img/particulas/aether-bloom.png" alt="">
+            <img src="img/particulas/flux-blue.png" alt="">
+            <img src="img/particulas/nano-relay.png" alt="">
+        </section>
+        <!-- DRONES -->
+
+        <section class="drones">
+            <div class="borda-drone">
+                <img src="img/Drones_Laser/companionAzul.png" alt="">
+                <img src="img/Drones_Laser/laseAzul.png" alt="">
+                <p><strong>Satori </strong> (悟り)</p>
+                <p>Satori is the oldest drone in the Companion Programme and acts as a logical extension of
+                    Emily’s mind. It analyses energy fields, predicts enemy routes, and calculates
+                    survival probabilities in nanoseconds. It speaks little — but when Satori issues an
+                    alert, it means something truly dangerous is about to happen.</p>
+            </div>
+            <div class="borda-drone">
+                <img src="img/Drones_Laser/companionRosa-export.png" alt="">
+                <img src="img/Drones_Laser/laser_Npc_Rosa.png" alt="">
+                <p><strong>Inori </strong>(祈り)</p>
+                <p>Balanced, protective, and attuned to the biological state of the team.
+                    Inori monitors vital signs, body temperature, and Emily’s nanoparticle flow following
+                    the Vesta incident. In addition to generating defensive fields, it reacts emotionally to
+                    danger: its light intensifies whenever Emily is wounded or low on energy. It is considered
+                    the “heart” of the Companions.</p>
+            </div>
+            <div class="borda-drone">
+                <img src="img/Drones_Laser/companionVErmelho.png" alt="">
+                <img src="img/Drones_Laser/bulletNPCvermelho.png" alt="">
+                <p><strong>Kagero</strong> (陽炎)</p>
+                <p>Silent, discreet, and lethal.
+                    Kagero was engineered for infiltration and rapid close-range strikes. Its temporal
+                    camouflage emitters allow it to distort its presence for fractions of a second — long
+                    enough to neutralise enemies attempting to flank Emily. It is the most aggressive of the
+                    group, always hunting the next threat.</p>
+            </div>
+            <div class="borda-drone">
+                <img src="img/Drones_Laser/companionBranco.png" alt="">
+                <img src="img/Drones_Laser/laserCompBranco.png" alt="">
+                <p><strong>Hikari </strong>(光)</p>
+                <p>Lightweight, fast, and ever-radiant.
+                    Hikari was designed to navigate unstable environments, illuminating paths and revealing
+                    hidden threats. It emits photonic pulses that restore part of Emily’s weapon sensors,
+                    acting almost like a guiding beam in dead zones. Its behaviour resembles that of a
+                    small, curious guardian.</p>
+            </div>
+        </section>
+
+        <!-- GALERIA -->
+        <section class="galeria">
+            <div class="galeria-borda">
+                <img src="img/EmilyiMG.png" alt="">
+                <img src="img/galaxiaVermalha.png" alt="">
+                <img src="img/lain42-export.png" alt="">
+                <img src="img/planeta_vermelho.png" alt="">
+                <img src="img/saturnoEsquerdo.png" alt="">
+                <img src="img/Alien_100Laranja.png" alt="">
+                <img src="img/MeganPersonagem300.png" alt="">
+                <img src="img/robo_ferro1.png" alt="">
+                <img src="img/pequeno_robo_idle3.png" alt="">
+                <img src="img/Bear-NPC.png" alt="">
+                <img src="img/moscaIndex.png" alt="">
+                <img src="img/alien-roxo_300.png" alt="">
+
+            </div>
+        </section>
+
+        <!-- PUBLISHER -->
+        <section class="publisher">
+            <div class="publisher-cont">
+                <img src="img/publisher/dangenEntertaiment300.png" alt="Dangen Entertainment Logo">
+                <div class="publisher-text">
+                    <h3>Who Are DANGEN Entertainment</h3>
+
+                    <p>DANGEN Entertainment is an independent game publisher based in Osaka, Japan.</p>
+
+                    <p>The name “DANGEN” (断言) translates to something akin to “a statement of conviction” — a fitting
+                        reflection of their dedication to supporting indie creators with unwavering commitment.</p>
+
+                    <p>The DANGEN team is multilingual and composed of professionals with strong backgrounds in
+                        development, localisation, programming, QA, marketing, and music.</p>
+
+                    <p>They are registered publishers on major platforms — PlayStation, Nintendo, Xbox, and Steam —
+                        enabling developers to release their games across multiple systems with full professional
+                        support.</p>
+
+                    <a href="https://dangenentertainment.com/" target="_blank" style="color: #60ff40;">Official
+                        Publisher Website</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="autor">
+            <div class="autor-img">
+                <img src="img/augusto1x1.png" alt="">
+            </div>
+
+            <div class="autor-text">
+                <h3>Creator of Sky Nexus</h3>
+
+                <p>My name is Augusto. I developed this universe inspired by the vastness of possibilities hidden within
+                    the secrets of the incomprehensible. The immensity of the cosmos fascinates me. I enjoy reading
+                    philosophy — among many authors, I prefer Socrates and Plato; George Orwell and Franz Kafka are also
+                    favourites of mine.
+                    My dream is to achieve several small dreams. And life, though eternal and unfathomable, is something
+                    that deserves to be lived.</p>
+
+                <p>
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </p>
+
+            </div>
+        </section>
+
+        <footer class="footer-back">
+            <nav class="footer">
+                <img src="img/particulas/aether-bloom.png" alt="">
+                <img src="img/E10plus.png" alt="">
+                <img src="img/SKY NEXUS.png" alt="">
+            </nav>
+            <div class="footer-text">
+                <div class="footer-text-um">
+                    <p>Fantasy Violence,</p>
+                    <p>Alcohol Reference,</p>
+                    <p>Mild Language</p><br>
+                </div>
+                <p>www.facebook.com/skynexus.com</p>
+                <p>Sky Nexus © Augusto Ramos 2023-2025. All rights reserved.v</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        const texto = "Hold back your tears, and strive <br>to save what is left of humanity.";
+        const elemento = document.getElementById("typewriter");
+        let index = 0;
+
+        function digitar() {
+            if (index < texto.length) {
+
+                // Se encontrar uma tag <br>, adiciona como HTML e pula ao próximo
+                if (texto.substr(index, 4) === "<br>") {
+                    elemento.innerHTML += "<br>";
+                    index += 4;
+                } else {
+                    elemento.innerHTML += texto.charAt(index);
+                    index++;
+                }
+
+                setTimeout(digitar, 70);
+            } else {
+                // Reinicia depois
+                setTimeout(() => {
+                    elemento.innerHTML = "";
+                    index = 0;
+                    digitar();
+                }, 1500);
+            }
+        }
+
+
+        digitar();
+    </script>
+
+    <!-- SCRIPT para o Botao de DropBOX daHistória -->
+    <script>
+        document.querySelectorAll(".mais").forEach(container => {
+            // pega botão e texto extra DENTRO do mesmo container .mais
+            const btn = container.querySelector(".ler-mais-btn");
+            const extra = container.querySelector(".extra-text");
+
+            // se faltar um dos dois, pula (evita erros)
+            if (!btn || !extra) return;
+
+            btn.addEventListener("click", () => {
+                extra.classList.toggle("open");
+
+                // troca o conteúdo do botão (opcional: mantém <strong> que você usa)
+                btn.innerHTML = extra.classList.contains("open")
+                    ? "<strong>- ▲</strong>"
+                    : "<strong>+ ▼</strong>";
+            });
+        });
+    </script>
+
+</body>
+
+</html>

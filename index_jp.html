@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Augusto">
+    <meta name="description"
+        content="Sky Nexus, Um jogo de ficçao cientifica em pixel art 2d. açao e aventura, run and gun">
+    <meta name="keywords" content="Game, jogo, pixel art, 2d">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="icon" href="logo/Logo_Sky_Nexus.svg">
+
+    <link rel="stylesheet" href="stylenexus.css">
+    <title>Sky Nexus</title>
+
+    <style>
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('img/banner.png') repeat-x;
+            background-size: auto 100%;
+            animation: moveParallax 20s linear infinite;
+            /* controla velocidade */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 0px;
+            margin-top: 4rem;
+            overflow: hidden;
+            margin-bottom: 5rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav id="nav-menu" class="navbar">
+
+            <a href="index.html" class="logo">
+                <img src="logo/Logo_Sky_NexusBranco02.png" alt="Sky Nexus Logo">
+            </a>
+
+            <!-- Hamburguer Menu -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-btn"> ☰</label>
+
+            <!-- CONSOLES no NAV -->
+            <div class="console-nav">
+                <a href="index.html"><img src="img/Consoles_IMG/xbox-SVG.svg" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/Switch-PNG.png" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/Steam-PNG.png" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/ItchIo_PNG.png" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/EpicGames-13.png" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/PlayStation-16.png" alt=""></a>
+            </div>
+            <!-- NAV principal entre páginas -->
+            <ul class="nav-links">
+                <li><a href="index.html">
+                        <img src="img/links_img/Btn_Home02.png" alt="Inicio">
+                    </a></li>
+                <li><a href="emconstrucao.html">
+                        <img src="img/links_img/Btn_Play.png" alt="Jogar demo">
+                    </a></li>
+                <li><a href="faq.html">
+                        <img src="img/links_img/Btn_FAQ.png" alt="perguntas e respostas">
+                    </a></li>
+                <li><a href="contato.html">
+                        <img src="img/links_img/Btn_Contato.png" alt="entre em contato">
+                    </a></li>
+
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <div class="pelicula">
+
+            </div>
+            <!-- Link bandeirad de Idiomas -->
+            <div class="bandeiras">
+                <a href="index_uk.html"><img src="img/bandeirinhas/ReinoUnido148.png" alt="idioma para ingles"></a>
+                <a href="index_jp.html"><img src="img/bandeirinhas/Japao148.png" alt="idioma japones"></a>
+                <a href="index.html"><img src="img/bandeirinhas/Brasil148.png" alt="idioma portugues"></a>
+
+            </div>
+            <div class="container-hero">
+                <h1>Sky Nexus</h1>
+                <h2>スカイ・ネクサス</h2>
+                <div class="w-selene">
+                    <div id="typewriter"></div>
+                    <div class="selene">
+                        <img src="img/SeleneROXO.gif" alt="">
+                    </div>
+                </div>
+
+                <div id="typewriter"></div>
+            </div>
+
+        </section>
+    </header>
+
+    <!-- VIDEO INDEX -->
+    <main class="container-main">
+        <section class="video-index">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed//WaJu72z0NsI?si=Oj2slc3GxP0hGsgQvq=hd720" frameborder="0">
+                </iframe>
+            </div>
+        </section>
+        <!-- CONSOLES links depois do video Principal -->
+        <section class="consoles">
+            <div class="console">
+                <img src="img/Consoles_IMG/xbox-150.png" alt="">
+                <p>Xbox</p>
+            </div>
+            <div class="console sw">
+                <img src="img/Consoles_IMG/Switch-PNG150.png" alt="">
+                <p>Swicth</p>
+            </div>
+            <div class="console st">
+                <img src="img/Consoles_IMG/Steam-PNG150.png" alt="">
+                <p>Steam</p>
+            </div>
+            <div class="console it"><img src="img/Consoles_IMG/ItchIo_PNG150.png" alt="">
+                <p>Itchi Io</p>
+            </div>
+            <div class="console ep"><img src="img/Consoles_IMG/EpicGames-150.png" alt="">
+                <p>Epic Games</p>
+            </div>
+            <div class="console ps"><img src="img/Consoles_IMG/PlayStation-150.png" alt="">
+                <p>Playstation</p>
+            </div>
+        </section>
+        <!-- CARDS Personagens Index -->
+        <section class="personagens">
+            <div class="person-emily">
+                <img src="img/personagens/emilyGalery.png" alt="">
+                <div class="emily-text">
+                    <h2>エミリー・ブレイク</h2>
+                    <p>
+                        エミリー・ブレイクは単なる兵士ではない——
+                        彼女は人類を深淵へとつなぐ“思考”そのものだ。
+                        人工惑星で生まれ、第5波の混乱の中で鍛え上げられた彼女は、ついには第42基地最高のサイバネティック・スペシャリストとなった。
+                    </p>
+                </div>
+            </div>
+
+            <div class="person-megan">
+                <img src="img/personagens/Megan.png" alt="">
+                <div class="emily-text">
+                    <h2>メーガン・ブレイク</h2>
+                    <p>
+                        メーガンは、キャンペーンの数々の重要な局面でエミリーに同行するフィールド・スペシャリストとして活躍する。
+                        自身が開発したナノテクノロジーのおかげで、メーガンは周囲の環境を解析し、敵性ナノ粒子の残留反応を検知し、待ち伏せを事前に察知することができる。
+                    </p>
+                </div>
+            </div>
+            <div class="person-razen">
+                <img src="img/personagens/RazenEvinPersonagem.png" alt="">
+
+                <div class="emily-text">
+                    <h2>ラゼン・エヴィン</h2>
+                    <p>
+                        第3波と第4波を生き抜いたベテランである彼は、宇宙の静寂の中で幾つものコロニーが消えていく光景を見てきた——
+                        そしてその一つひとつの喪失を、彼を前へと突き動かす“傷”として背負っている。
+                        現在、彼はセレネ基地の先進防衛部隊の隊長を務めている。
+                    </p>
+                </div>
+            </div>
+            <div class="person-grow">
+                <img src="img/personagens/KoutetsuPersonagem.png" alt="">
+                <div class="emily-text">
+                    <h2>コウテツ・グロウ</h2>
+                    <p>
+                        コウテツ・グロウは、単なるスカイ・ネクサスの最終敵ではない——
+                        戦争が始まった“原因”そのものだ。
+
+                        小惑星ヴェスタの核にある生体ラボで鍛え上げられたグロウは、
+                        生体物質と異次元テクノロジーが完全に融合した初の“完璧なハイブリッド”である。
+                        彼の身体は、有機金属、呼吸する回路、そして数秒で再生する筋肉が一体となった存在なのだ。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTROLE -->
+        <section class="controle">
+            <div>
+                <img src="img/controleSemFundoJP.png" alt="">
+            </div>
+        </section> <br>
+
+        <section class="controle-teclado">
+            <div>
+                <img src="img/tecladoMouse/tecladoMouseJP.png" alt="">
+            </div>
+        </section> <br>
+        <!-- SEÇÂO DE ARMAS -->
+        <section class="armas">
+            <div class="armas01">
+                <!-- Plasma basico -->
+                <div class="minibox">
+                    <div class="plasma01">
+                        <img src="img/Armas/Laser_00-export.png" alt="">
+                        <img src="img/Projeteis/plasma0.png" alt="">
+                    </div>
+                    <div class="texto-armas">
+                        <p><strong>NanoRector 9</strong> - エミリーが最初に扱う基本武器。シンプルだが絶対に裏切らない信頼性を持ち、弾薬は無限。ここから彼女の戦闘力が始まる。</p>
+                    </div>
+                </div>
+                <!-- Plasma cone 3 -->
+                <div class="minibox">
+                    <div class="plasma01">
+                        <img src="img/Armas/Metralhadora02.png" alt="">
+                        <img src="img/Projeteis/plasma02.png" alt="">
+
+                    </div>
+                    <div class="texto-armas">
+                        <p>Tri-Shot - コーン状に3発のエネルギー弾を発射し、広範囲をカバー。近距離の複数の敵を一気に撃ち抜くことができる。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Laser Rosa -->
+            <div class="armas01">
+                <div class="minibox">
+                    <div class="plasma01">
+                        <img src="img/Armas/Laser.png" alt="">
+                        <img src="img/Projeteis/laser02.png" alt="">
+                    </div>
+                    <div class="texto-armas">
+                        <p><strong>PlasmaBeam</strong> -
+                            超電離エネルギーを途切れることなく放出する強力なビーム。装甲を切り裂き、生体組織を数秒で消し飛ばす。発動中は常に最大出力を維持する。</p>
+                    </div>
+                </div>
+                <!-- Lança Missel base -->
+                <div class="minibox">
+                    <div class="plasma01">
+                        <img src="img/Armas/lanca-meno01-export.png" alt="">
+                        <img src="img/Projeteis/missel01.png" alt="">
+
+                    </div>
+                    <div class="texto-armas">
+                        <p>Raptor-3 - フィールド制圧を目的とした実験型ランチャー。3発のミサイルを同時発射し、高速で迫りくる破壊のスウォームを形成する。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Foguete Rosa -->
+
+            <div class="armas01">
+                <div class="minibox">
+                    <div class="plasma01">
+                        <img src="img/Armas/lanca-foguete03.png" alt="">
+                        <img src="img/Projeteis/Missel03.png" alt="">
+                    </div>
+                    <div class="texto-armas">
+                        <p>Raptor-Lock - ミサイルはそれぞれ超高速で空気を切り裂き、敵の動きを正確に追尾する。
+                            この武器は、ただ攻撃するためではなく──生きて逃げられるものを一切残さないために作られた。</p>
+                    </div>
+                </div>
+                <!-- Foguete Azul -->
+                <div class="minibox">
+
+                    <div class="plasma01">
+                        <img src="img/Armas/lanca-chama.png" alt="">
+                        <img src=" img/Projeteis/flamesPartes.png" alt="">
+
+                    </div>
+                    <div class="texto-armas">
+                        <p>FlameBurst - 各ミサイルは超高速で空気を切り裂き、敵の動きを正確に追尾する。
+                            “攻撃するだけ”では物足りない者のための武器――逃がすことなく、確実に仕留めるために。</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Metralhadora Plasma 4 -->
+            <div class="armas01">
+                <div class="minibox">
+                    <div class="plasma01">
+                        <img src="img/Armas/plasma02.png" alt="">
+                        <img src="img/Projeteis/plasma03.png" alt="">
+                    </div>
+                    <div class="texto-armas">
+                        <p>Overload 4 - クリックするたびに、灼熱の弾丸を4発発射し、フィールド上で最大11ユニットの距離に到達する。
+                            放たれた一射ごとに、燃え上がるエネルギービームが空間を切り裂き、正確かつ強烈な衝撃を与える。</p>
+                    </div>
+                </div>
+                <!-- Foguete Azul -->
+                <div class="minibox">
+                    <div class="plasma01">
+                        <img src="img/Armas/lanca-foguete02.png" alt="">
+                        <img src="img/Projeteis/missel02.png" alt="">
+
+                    </div>
+                    <div class="texto-armas">
+                        <p>Viper-M - 「高度誘導ミサイルランチャー」
+                            精密なターゲット追跡機能を備えた先進型の追尾ミサイルランチャー。
+                            1発ごとに中程度の発射速度ながら、高度な追跡アルゴリズムにより、逃げる敵でさえ確実に捕捉し撃ち抜く。</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- VIDEOS FASES -->
+        <section class="video-fases">
+            <div class="video-fase-um">
+                <video src="video-index/fase-um-triler.mp4" controls></video>
+            </div>
+            <section class="bloco-aside">
+                <div class="fase-um-img01">
+                    <img src="img/cena01.png" alt="">
+                </div>
+                <div class="fase-um-img02">
+                    <img src="img/cena03.png" alt="">
+                </div>
+            </section>
+        </section>
+
+        <!-- VIDEOS FASES Dois-->
+        <section class="video-fases">
+            <div class="video-fase-um">
+                <video src="video-index/fase-dois-triler.mp4" controls></video>
+            </div>
+            <section class="bloco-aside">
+                <div class="fase-um-img01">
+                    <img src="img/img-index/cena-fase-dois01.png" alt="">
+                </div>
+                <div class="fase-um-img02">
+                    <img src="img/img-index/cena536.png" alt="">
+                </div>
+            </section>
+        </section>
+
+        <!-- HISTORIA do Jogo -->
+        <section class="historia">
+            <div class="borda-historia">
+                <div class="back-historia">
+                    <img src="img/img-conceito600.png" alt="">
+                </div>
+                <div class="mais">
+                    <div class="historia-text">
+                        <h2>コンセプト</h2>
+                        <p>5605年、人類は恒星間戦争と宇宙崩壊を経て、人工惑星「SELENE」に生き延びていた。
+                            宇宙を動かす生命エネルギー ―― ナノ粒子は、
+                            いまや文明同士が奪い合う最も重要な資源となっていた。
+                        </p>
+                    </div>
+
+                    <!-- Texto oculto -->
+
+                    <div class="extra-text">
+                        <p>
+                            しかし、エミリーが亀裂だらけのヴェスタ地表に降り立つと、
+                            敵勢力はすでに重力核の操作を始めていた。
+                            生体機械のクリーチャーが各セクターを監視し、
+                            彼女の周囲では時間そのものが歪み始めている――。
+                        </p>
+                    </div>
+                    <button class="ler-mais-btn"> <strong>+ ▼</strong></button>
+                </div>
+
+            </div>
+        </section>
+        <!-- INICIO - 5 Onda -->
+        <section class="historia historia02">
+            <div class="borda-historia">
+                <div class="back-historia">
+                    <img src="img/img-conceito600.png" alt="">
+                </div>
+                <div class="mais">
+                    <div class="historia-text">
+                        <h2>序章 - 第5の波</h2>
+                        <p>
+                            旧人類コロニーが崩壊して数十年後、「第5の波」として知られる現象が銀河の運命を変えた。
+                            二つの重力特異点が衝突し、次元の渦が開き、そこから未知の技術を持つ生体機械のクリーチャーが出現した。
+                        </p>
+                    </div>
+
+                    <!-- Texto oculto -->
+                    <div class="extra-text">
+                        <p>
+                            その瞬間から、時空の構造は二度と元には戻らなかった。
+                            広大な領域が慢性的な歪みに覆われ、重力は生き物のように揺らぎ、
+                            並行世界の断片が一瞬だけ重なり合う現象が頻発するようになった。
+                        </p>
+                        <!-- <button class="ler-mais-btn">Ler mais ▼</button> -->
+                    </div>
+                    <button class="ler-mais-btn"> <strong>+ ▼</strong></button>
+                </div>
+
+            </div>
+        </section>
+        <!-- MEIO -->
+        <section class="historia">
+            <div class="borda-historia">
+                <div class="back-historia">
+                    <img src="img/img-conceito600.png" alt="">
+                </div>
+                <div class="mais">
+                    <div class="historia-text">
+                        <h2>中章</h2>
+                        <p>
+                            小惑星ヴェスタで次元活動の兆候が検出されたとき、
+                            エミリーは第4の波を生き延びたベテラン、司令官レイズ・エヴィンに招集された。
+                            彼女の任務は──エイリアン艦隊の指揮官である鋼鉄機動（Koutetsu Mobile）が
+                            時間渦を再起動するのを阻止することだった。
+                        </p>
+                    </div>
+
+                    <!-- Texto oculto -->
+
+                    <div class="extra-text">
+                        <p>
+                            長距離センサーは、ヘリオン・プライムのコロニー陥落直前に記録されたものと
+                            まったく同じ重力変動を検出していた。
+                        </p>
+                        <!-- <button class="ler-mais-btn">Ler mais ▼</button> -->
+                    </div>
+                    <button class="ler-mais-btn"> <strong>+ ▼</strong></button>
+                </div>
+
+            </div>
+        </section>
+        <!-- CLIMAX -->
+        <section class="historia historia02">
+            <div class="borda-historia">
+                <div class="back-historia">
+                    <img src="img/img-conceito600.png" alt="">
+                </div>
+                <div class="mais">
+                    <div class="historia-text">
+                        <h2>クライマックス — コウテツ・グロウとの対決</h2>
+                        <p>
+                            宇宙の廃墟とエイリアンの生体研究施設を突破したエミリーは、
+                            小惑星ヴェスタの生きた岩の内部に築かれた浮遊都市の中心部へと辿り着く。
+                            そこでは、肉・鉄・暗黒エネルギーが融合した巨躯──
+                            コウテツ・モバイル（Koutetsu Mobile）が待ち構えていた。
+                        </p>
+                    </div>
+
+                    <!-- Texto oculto -->
+
+                    <div class="extra-text">
+                        <p>
+                            周囲の空気は震え、まるで分子ひとつひとつがその場から逃げ出そうとしているようだった。
+                            重力は見えない渦を描いて歪み、岩の破片を浮かせてはゆっくりと衝突させ、
+                            まるで別の時代から響くかのような残響を生み出していた。
+                        </p>
+                        <!-- <button class="ler-mais-btn">Ler mais ▼</button> -->
+                    </div>
+                    <button class="ler-mais-btn"> <strong>+ ▼</strong></button>
+                </div>
+
+            </div>
+        </section>
+        <!-- FIM -->
+        <section class="historia">
+            <div class="borda-historia">
+                <div class="back-historia">
+                    <img src="img/img-final.png" alt="">
+                </div>
+                <div class="mais">
+                    <div class="historia-text">
+                        <h2>Final</h2>
+                        <p>Exausta, Emily retorna à nave. A explosão de Vesta libera uma onda colossal de
+                            Nanopartículas,
+                            que se espalha por todo o setor espacial.
+                            Raças a 45.000 km de distância absorvem a energia — e com ela, um fragmento do sistema de
+                            propulsão temporal ativado antes da destruição.
+                        </p>
+                    </div>
+
+                    <!-- Texto oculto -->
+
+                    <div class="extra-text">
+                        <p style="color:#ff40a9;">
+                            Por alguns segundos, tudo parece estabilizar…
+                            Mas então, algo impossível acontece …
+                        </p>
+
+                        <!-- <button class="ler-mais-btn">Ler mais ▼</button> -->
+                    </div>
+                    <button class="ler-mais-btn"> <strong>+ ▼</strong></button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FAIXA Preta com Botao JogarDEMO -->
+        <section class="play-demo">
+            <div class="borda-faixa">
+                <img src="img/EmlyIdleGIF.gif" alt="">
+
+                <a href="emconstrucao.html">
+                    <img src="img/links_img/Btn_PlayDemo.png" alt="">
+                </a>
+
+                <!-- <img src="logo/Logo_Sky_NexusBranco200.png" alt="Logo de Sky Nexus colorido" class="play-demo-logo"> -->
+                <img src="img/megan_GIF.gif" alt="">
+
+            </div>
+        </section>
+        <!-- Particulas -->
+        <section class="particulas">
+            <img src="img/particulas/aether-bloom.png" alt="">
+            <img src="img/particulas/flux-blue.png" alt="">
+            <img src="img/particulas/nano-relay.png" alt="">
+        </section>
+        <!-- DRONES -->
+
+        <section class="drones">
+            <div class="borda-drone">
+                <img src="img/Drones_Laser/companionAzul.png" alt="">
+                <img src="img/Drones_Laser/laseAzul.png" alt="">
+                <p><strong>Satori </strong> (悟り)</p>
+                <p>サトリはコンパニオン計画で最も古いドローンであり、エミリーの思考を論理的に拡張する存在である。
+                    エネルギーフィールドを解析し、敵の進行ルートを予測し、生存確率をナノ秒単位で算出する。
+                    多くを語ることはない——だが、彼が警告を発した時、それは“本当に危険な何か”が迫っている証拠である。</p>
+            </div>
+            <div class="borda-drone">
+                <img src="img/Drones_Laser/companionRosa-export.png" alt="">
+                <img src="img/Drones_Laser/laser_Npc_Rosa.png" alt="">
+                <p><strong>Inori </strong>(祈り)</p>
+                <p>均衡が取れており、仲間を守る性質を持つイノリは、チームの生体状態に敏感に反応する。
+                    ヴェスタでの事件以降、エミリーのバイタルサイン、体温、そしてナノ粒子の流動を常に監視している。
+                    防御フィールドを展開するだけでなく、危険な状況では感情的な反応を示し、
+                    エミリーが負傷したりエネルギーが低下すると、その光はより強く輝く。
+                    仲間機（コンパニオン）の中では「心臓」のような存在とされている。</p>
+            </div>
+            <div class="borda-drone">
+                <img src="img/Drones_Laser/companionVErmelho.png" alt="">
+                <img src="img/Drones_Laser/bulletNPCvermelho.png" alt="">
+                <p><strong>Kagero</strong> (陽炎)</p>
+                <p>カゲロウは隠密性が高く、静かで致命的。
+                    近距離での浸透と速攻を目的に造られた。
+                    時間迷彩エミッターにより、わずかな瞬間だけ存在を歪めることができ、
+                    その隙にエミリーを側面から狙う敵を無力化する。
+                    最も攻撃的なコンパニオンであり、常に次の脅威を狩り求めている。</p>
+            </div>
+            <div class="borda-drone">
+                <img src="img/Drones_Laser/companionBranco.png" alt="">
+                <img src="img/Drones_Laser/laserCompBranco.png" alt="">
+                <p><strong>Hikari </strong>(光)</p>
+                <p>軽快で、俊敏で、そして常にまばゆい光を放つ。
+                    ヒカリは不安定な環境を航行するために設計され、進路を照らし、隠れた脅威を露わにする。
+                    彼はフォトンパルスを放出してエミリーの武装センサーの一部を回復させ、
+                    “デッドゾーン”の中ではまるで光のビームのように機能する。
+                    その挙動は、小さな好奇心旺盛の守護者を思わせる。</p>
+            </div>
+        </section>
+
+        <!-- GALERIA -->
+        <section class="galeria">
+            <div class="galeria-borda">
+                <img src="img/EmilyiMG.png" alt="">
+                <img src="img/galaxiaVermalha.png" alt="">
+                <img src="img/lain42-export.png" alt="">
+                <img src="img/planeta_vermelho.png" alt="">
+                <img src="img/saturnoEsquerdo.png" alt="">
+                <img src="img/Alien_100Laranja.png" alt="">
+                <img src="img/MeganPersonagem300.png" alt="">
+                <img src="img/robo_ferro1.png" alt="">
+                <img src="img/pequeno_robo_idle3.png" alt="">
+                <img src="img/Bear-NPC.png" alt="">
+                <img src="img/moscaIndex.png" alt="">
+                <img src="img/alien-roxo_300.png" alt="">
+
+            </div>
+        </section>
+
+        <!-- PUBLISHER -->
+        <section class="publisher">
+            <div class="publisher-cont">
+                <img src="img/publisher/dangenEntertaiment300.png" alt="">
+                <div class="publisher-text">
+                    <h3>DANGEN Entertainment とは何者ですか</h3>
+
+                    <p>DANGEN Entertainment は、日本・大阪を拠点とするインディー系パブリッシャーです。</p>
+                    <p>O「DANGEN（断言）」という名前は、日本語で“強い確信をもって言い切る言葉”というような意味を持つ。
+                        彼らはインディー作品への強いコミットメントを示している。</p>
+                    <p>DANGEN Entertainmentは、日本・大阪に拠点を置くインディー系パブリッシャーです。</p>
+                    <p>彼らはPlayStation、Nintendo、Xbox、Steamなど主要プラットフォームの正式パブリッシャーであり、開発者のゲームを複数のプラットフォームで専門的なサポートとともに展開することができます。
+                    </p>
+                    <a href="https://dangenentertainment.com/" target="_blank" style="color: #60ff40;">パブリッシャーの公式サイト</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="autor">
+            <div class="autor-img">
+                <img src="img/augusto1x1.png" alt="">
+            </div>
+
+            <div class="autor-text">
+                <h3>スカイ・ネクサスのクリエイター</h3>
+
+                <p>私の名前はアウグストです。この宇宙を開発したのは、理解しがたいものの秘密に潜む無限の可能性を考えたからです。宇宙の広大さには魅了されます。哲学を読むのが好きで、数多くの作家の中ではソクラテスとプラトンを特に好みます。ジョージ・オーウェルやフランツ・カフカも良い作家です。
+                    私の夢は、いくつもの小さな夢を実現することです。そして、人生とは、たとえ永遠で理解しがたいものであっても、生きる価値のあるものだと思います。
+
+                </p>
+                <p>
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </p>
+
+            </div>
+        </section>
+
+        <footer class="footer-back">
+            <nav class="footer">
+                <img src="img/particulas/aether-bloom.png" alt="">
+                <img src="img/E10plus.png" alt="">
+                <img src="img/SKY NEXUS.png" alt="">
+            </nav>
+            <div class="footer-text">
+                <div class="footer-text-um">
+                    <p>Fantasy Violence,</p>
+                    <p>Alcohol Reference,</p>
+                    <p>Mild Language</p><br>
+                </div>
+                <p>www.facebook.com/skynexus.com</p>
+                <p>スカイ・ネクサス © アウグスト・ラモス 2023-2025. </p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        const texto = "涙をこらえて、残された人類を<br>救おうとしなさい。";
+        const elemento = document.getElementById("typewriter");
+        let index = 0;
+
+        function digitar() {
+            if (index < texto.length) {
+
+                // Se encontrar uma tag <br>, adiciona como HTML e pula ao próximo
+                if (texto.substr(index, 4) === "<br>") {
+                    elemento.innerHTML += "<br>";
+                    index += 4;
+                } else {
+                    elemento.innerHTML += texto.charAt(index);
+                    index++;
+                }
+
+                setTimeout(digitar, 70);
+            } else {
+                // Reinicia depois
+                setTimeout(() => {
+                    elemento.innerHTML = "";
+                    index = 0;
+                    digitar();
+                }, 1500);
+            }
+        }
+
+
+        digitar();
+    </script>
+
+    <!-- SCRIPT para o Botao de DropBOX daHistória -->
+    <script>
+        document.querySelectorAll(".mais").forEach(container => {
+            // pega botão e texto extra DENTRO do mesmo container .mais
+            const btn = container.querySelector(".ler-mais-btn");
+            const extra = container.querySelector(".extra-text");
+
+            // se faltar um dos dois, pula (evita erros)
+            if (!btn || !extra) return;
+
+            btn.addEventListener("click", () => {
+                extra.classList.toggle("open");
+
+                // troca o conteúdo do botão (opcional: mantém <strong> que você usa)
+                btn.innerHTML = extra.classList.contains("open")
+                    ? "<strong>- ▲</strong>"
+                    : "<strong>+ ▼</strong>";
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

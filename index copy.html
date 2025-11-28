@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Augusto">
+    <meta name="description"
+        content="Sky Nexus, Um jogo de ficçao cientifica em pixel art 2d. açao e aventura, run and gun">
+    <meta name="keywords" content="Game, jogo, pixel art, 2d">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="icon" href="logo/Logo_Sky_Nexus.svg">
+
+    <link rel="stylesheet" href="stylenexus.css">
+    <title>Sky Nexus</title>
+
+
+    <style>
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('img/banner.png') repeat-x;
+            background-size: auto 100%;
+            animation: moveParallax 30s linear infinite;
+            /* controla velocidade */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 0px;
+            margin-top: 4rem;
+            overflow: hidden;
+            margin-bottom: 5rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav id="nav-menu" class="navbar">
+
+            <a href="index.html" class="logo">
+                <img src="logo/Logo_Sky_NexusBranco02.png" alt="Sky Nexus Logo">
+            </a>
+            <!-- CONSOLES no NAV -->
+            <div class="console-nav">
+                <a href="index.html"><img src="img/Consoles_IMG/x" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/Switch-PNG.png" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/Steam-PNG.png" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/ItchIo_PNG.png" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/EpicGames-13.png" alt=""></a>
+                <a href="index.html"><img src="img/Consoles_IMG/PlayStation-16.png" alt=""></a>
+            </div>
+            <!-- NAV principal entre páginas -->
+            <ul class="nav-links">
+                <li><a href="index.html">
+                        <img src="img/links_img/Btn_Home02.png" alt="Inicio">
+                    </a></li>
+                <li><a href="#">
+                        <img src="img/links_img/Btn_Play.png" alt="Jogar demo">
+                    </a></li>
+                <li><a href="faq.html">
+                        <img src="img/links_img/Btn_FAQ.png" alt="perguntas e respostas">
+                    </a></li>
+                <li><a href="contato.html">
+                        <img src="img/links_img/Btn_Contato.png" alt="entre em contato">
+                    </a></li>
+
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <div class="pelicula">
+
+            </div>
+            <!-- Link bandeirad de Idiomas -->
+            <div class="bandeiras">
+                <a href="index_uk.html"><img src="img/bandeirinhas/ReinoUnido148.png" alt="idioma para ingles"></a>
+                <a href="index_jp.html"><img src="img/bandeirinhas/Japao148.png" alt="idioma japones"></a>
+                <a href="index.html"><img src="img/bandeirinhas/Brasil148.png" alt="idioma portugues"></a>
+
+            </div>
+            <div class="container-hero">
+                <h1>Sky Nexus</h1>
+                <h2>スカイ・ネクサス</h2>
+
+
+            </div>
+
+        </section>
+    </header>
+
+    <div id="typewriter"></div>
+
+    <!-- VIDEO INDEX -->
+    <main class="container-main">
+        <section class="video-index">
+            <video src="video-index/Triler_Index.mp4" controls></video>
+        </section>
+        <!-- CONSOLES links depois do video Principal -->
+        <section class="consoles">
+            <div class="console">
+                <img src="img/Consoles_IMG/xbox-12-12.png" alt="">
+                <p>Xbox</p>
+            </div>
+            <div class="console sw">
+                <img src="img/Consoles_IMG/Switch-PNG.png" alt="">
+                <p>Swicth</p>
+            </div>
+            <div class="console st">
+                <img src="img/Consoles_IMG/Steam-PNG.png" alt="">
+                <p>Steam</p>
+            </div>
+            <div class="console it"><img src="img/Consoles_IMG/ItchIo_PNG.png" alt="">
+                <p>Itchi Io</p>
+            </div>
+            <div class="console ep"><img src="img/Consoles_IMG/EpicGames-13.png" alt="">
+                <p>Epic Games</p>
+            </div>
+            <div class="console ps"><img src="img/Consoles_IMG/PlayStation-16.png" alt="">
+                <p>Playstation</p>
+            </div>
+        </section>
+        <!-- CARDS Personagens Index -->
+        <section class="personagens">
+            <div class="person-emily">
+                <img src="img/personagens/emilyGalery.png" alt="">
+                <div class="emily-text">
+                    <h2>Emily Blake</h2>
+                    <p>
+                        Emily Blake é mais do que uma soldada — ela é a mente que conecta a humanidade ao abismo.
+                        Nascida em
+                        um planeta artificial e forjada no caos da 5ª Onda, Emily se tornou a melhor Especialista
+                        Cibernética da Base 42.
+                    </p>
+                </div>
+            </div>
+
+            <div class="person-megan">
+                <img src="img/personagens/Megan.png" alt="">
+                <div class="emily-text">
+                    <h2>Megan Blake</h2>
+                    <p>
+                        Megan atua como a especialista de campo que acompanha Emily em vários momentos-chave da
+                        campanha. Graças à nanotecnologia que ela mesma desenvolveu, Megan é capaz de analisar o
+                        ambiente, detectar resíduos das nanopartículas inimigas e antecipar emboscadas.
+                    </p>
+                </div>
+            </div>
+            <div class="person-razen">
+                <img src="img/personagens/RazenEvinPersonagem.png" alt="">
+
+                <div class="emily-text">
+                    <h2>Razen Evin</h2>
+                    <p>
+                        Veterano da 3ª e 4ª Onda, ele já viu colônias inteiras desaparecerem no silêncio do espaço — e
+                        carrega cada perda como uma cicatriz que o mantém em movimento. Atualmente, é o capitão das
+                        Unidades de Defesa Avançada da Base Selene,
+                    </p>
+                </div>
+            </div>
+            <div class="person-grow">
+                <img src="img/personagens/KoutetsuPersonagem.png" alt="">
+                <div class="emily-text">
+                    <h2>Koutetsu Grow</h2>
+                    <p>
+                        Koutetsu Grow não é apenas o inimigo final de Sky Nexus — ele é a razão pela qual a guerra
+                        começou.
+
+                        Forjado em um laboratório vivo no núcleo do asteroide Vesta, Grow é o primeiro híbrido perfeito
+                        entre matéria biológica e tecnologia interdimensional. Seu corpo é uma fusão de metal orgânico,
+                        circuitos que respiram e músculos que se regeneram em segundos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTROLE -->
+        <section class="controle">
+            <div>
+                <img src="img/controleSemFundo.png" alt="">
+            </div>
+        </section>
+
+        <section class="controle-teclado">
+            <div>
+                <img src="img/tecladoMouse/tecladoMousePT.png" alt="">
+            </div>
+        </section> <br>
+
+
+        <!-- SEÇÂO DE ARMAS -->
+        <section class="armas">
+            <div class="armas01">
+                <!-- Plasma basico -->
+                <div class="minibox">
+                    <div class="plasma01">
+                        <img src="img/Armas/Laser_00-export.png" alt="">
+                        <img src="img/Projeteis/plasma0.png" alt="">
+                    </div>
+                    <div class="texto-armas">
+                        <p><strong>NanoRector 9</strong> - Arma básica cada disparo por clique, infinita</p>
+                    </div>
+                </div>
+                <!-- Plasma cone 3 -->
+                <div class="minibox">
+                    <div class="plasma01" 1>
+                        <img src="img/Armas/Metralhadora02.png" alt="">
+                        <img src="img/Projeteis/plasma02.png" alt="">
+
+                    </div>
+                    <div class="texto-armas">
+                        <p>Tri-Shot - Dispara 3 projéteis em forma de cone, cobrindo uma área maior e atingindo
+                            múltiplos
+                            inimigos próximos.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Laser Rosa -->
+            <div class="armas01">
+                <div class="plasma01">
+                    <img src="img/Armas/Laser.png" alt="">
+                    <img src="img/Projeteis/laser02.png" alt="">
+                </div>
+                <p><strong>PlasmaBeam</strong> - Dispara um feixe de plasma contínuo que causa alto dano enquanto
+                    estiver ativo.</p>
+                <!-- Lança Missel base -->
+                <div class="plasma01">
+                    <img src="img/Armas/lanca-meno01-export.png" alt="">
+                    <img src="img/Projeteis/missel01.png" alt="">
+
+                </div>
+                <p>Raptor-3 - Dispara 3 mísseis simultaneamente em cadência rápida.</p>
+
+            </div>
+            <!-- Foguete Rosa -->
+            <div class="armas01">
+                <div class="plasma01">
+                    <img src="img/Armas/lanca-foguete03.png" alt="">
+                    <img src="img/Projeteis/Missel03.png" alt="">
+                </div>
+                <p>Raptor-Lock - Cada míssil corta o ar em velocidade extrema, rastreando movimentos inimigos com
+                    precisão. Uma arma feita para quem não quer apenas atacar… mas garantir que nada escape vivo.</p>
+                <!-- Lança Chamas -->
+                <div class="plasma01">
+                    <img src="img/Armas/lanca-chama.png" alt="">
+                    <img src=" img/Projeteis/flamesPartes.png" alt="">
+
+                </div>
+                <p>FlameBurst - Libera um fluxo contínuo de chamas escaldantes, queimando tudo em seu caminho. Utiliza
+                    um modelo animado em vez de um sistema de partículas para proporcionar um efeito mais intenso e
+                    visceral.</p>
+
+            </div>
+            <!-- Metralhadora Plasma 4 -->
+            <div class="armas01">
+                <div class="plasma01">
+                    <img src="img/Armas/plasma02.png" alt="">
+                    <img src="img/Projeteis/plasma03.png" alt="">
+                </div>
+                <p>Overload 4 - Dispara 4 projéteis por clique com distância de 11 Unity unit</p>
+                <!-- Foguete Azul -->
+                <div class="plasma01">
+                    <img src="img/Armas/lanca-foguete02.png" alt="">
+                    <img src="img/Projeteis/missel02.png" alt="">
+
+                </div>
+                <p>Viper-M - Dispara mísseis que perseguem inimigos em cadência média.</p>
+
+            </div>
+        </section>
+
+        <!-- VIDEOS FASES -->
+        <section class="video-fases">
+            <div class="video-fase-um">
+                <video src="video-index/fase-um-triler.mp4" controls></video>
+            </div>
+            <section class="bloco-aside">
+                <div class="fase-um-img01">
+                    <img src="img/cena01.png" alt="">
+                </div>
+                <div class="fase-um-img02">
+                    <img src="img/cena03.png" alt="">
+                </div>
+            </section>
+        </section>
+
+        <!-- VIDEOS FASES Dois-->
+        <section class="video-fases">
+            <div class="video-fase-um">
+                <video src="video-index/fase-dois-triler.mp4" controls></video>
+            </div>
+            <section class="bloco-aside">
+                <div class="fase-um-img01">
+                    <img src="img/img-index/cena-fase-dois01.png" alt="">
+                </div>
+                <div class="fase-um-img02">
+                    <img src="img/img-index/cena536.png" alt="">
+                </div>
+            </section>
+        </section>
+
+        <!-- HISTORIA do Jogo -->
+        <section class="historia">
+            <div class="borda-historia">
+                <div class="back-historia">
+                    <img src="img/img-conceito600.png" alt="">
+                </div>
+                <div class="historia-text">
+                    <h2>Conceito</h2>
+                    <p>No ano 5605, a humanidade sobrevive em um planeta artificial chamado SELENE, após séculos de
+                        guerras
+                        interplanetárias e colapsos cósmicos. A energia vital que move o universo — as Nanopartículas —
+                        tornou-se o recurso mais disputado entre as civilizações.</p>
+                </div>
+            </div>
+        </section>
+        <!-- INICIO - 5 Onda -->
+        <section class="historia historia02">
+            <div class="borda-historia">
+                <div class="back-historia">
+                    <img src="img/5onda.png" alt="">
+                </div>
+                <div class="historia-text">
+                    <h2>Início - 5ª Onda</h2>
+                    <p>Décadas após o colapso das antigas colônias humanas, um evento conhecido como A 5ª Onda mudou o
+                        destino da galáxia. Duas Singularidades Gravitacionais colidiram, abrindo um vórtice dimensional
+                        de onde emergiram criaturas biomecânicas portadoras de uma tecnologia </p>
+                </div>
+            </div>
+        </section>
+        <!-- MEIO -->
+        <section class="historia">
+            <div class="borda-historia">
+                <div class="back-historia">
+                    <img src="img/img-conceito600.png" alt="">
+                </div>
+                <div class="historia-text">
+                    <h2>Meio</h2>
+                    <p>Quando sinais de atividade dimensional são detectados no Asteroide Vesta, Emily é convocada pelo
+                        Comandante Raze Evin, veterano sobrevivente da 4ª Onda. A missão: impedir que Koutetsu Mobile,
+                        líder da frota alienígena,</p>
+                </div>
+            </div>
+        </section>
+        <!-- CLIMAX -->
+        <section class="historia historia02">
+            <div class="borda-historia">
+                <div class="back-historia">
+                    <img src="img/climax.png" alt="">
+                </div>
+                <div class="historia-text">
+                    <h2>Clímax — O Confronto com Koutetsu Grow</h2>
+                    <p>Após atravessar ruínas cósmicas e biolaboratórios alienígenas, Emily chega ao coração de Vesta,
+                        uma cidade suspensa dentro da rocha viva do asteroide. Lá, ela enfrenta o colosso Koutetsu
+                        Mobile, uma entidade que mistura carne, ferro e energia escura. </p>
+                </div>
+            </div>
+        </section>
+        <!-- FIM -->
+        <section class="historia">
+            <div class="borda-historia">
+                <div class="back-historia">
+                    <img src="img/img-final.png" alt="">
+                </div>
+                <div class="historia-text">
+                    <h2>Final</h2>
+                    <p>Exausta, Emily retorna à nave. A explosão de Vesta libera uma onda colossal de Nanopartículas,
+                        que se espalha por todo o setor espacial.
+                        Raças a 45.000 km de distância absorvem a energia — e com ela, um fragmento do sistema de
+                        propulsão temporal ativado antes da destruição.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAIXA Preta com Botao JogarDEMO -->
+        <section class="play-demo">
+            <div class="borda-faixa">
+                <img src="img/EmlyIdleGIF.gif" alt="Emily gif animado">
+                <img src="logo/Logo_Sky_Colorido.png" alt="Logo de Sky Nexus colorido" class="play-demo-logo">
+                <img src="img/megan_GIF.gif" alt="">
+                <a href="">
+                    <img src="img/links_img/Btn_PlayDemo.png" alt="">
+                </a>
+            </div>
+        </section>
+        <!-- Particulas -->
+        <section class="particulas">
+            <img src="img/particulas/aether-bloom.png" alt="">
+            <img src="img/particulas/flux-blue.png" alt="">
+            <img src="img/particulas/nano-relay.png" alt="">
+        </section>
+        <!-- DRONES -->
+
+        <section class="drones">
+            <div class="borda-drone">
+                <img src="img/Drones_Laser/companionAzul.png" alt="">
+                <img src="img/Drones_Laser/laseAzul.png" alt="">
+                <p><strong>Satori </strong> (悟り)</p>
+                <p>Satori é o drone mais antigo do programa Companion e opera como uma extensão lógica da mente de
+                    Emily. Ele analisa campos energéticos, prevê rotas de inimigos e calcula probabilidades de
+                    sobrevivência em nanossegundos. Não fala muito — mas quando emite um alerta, é porque algo realmente
+                    perigoso está prestes a acontecer.</p>
+            </div>
+            <div class="borda-drone">
+                <img src="img/Drones_Laser/companionRosa-export.png" alt="">
+                <img src="img/Drones_Laser/laser_Npc_Rosa.png" alt="">
+                <p><strong>Inori </strong>(祈り)</p>
+                <p>Equilibrado, protetor e sensível ao estado biológico da equipe.
+                    Inori monitora sinais vitais, temperatura corporal e fluxo de nanopartículas em Emily após o
+                    incidente de Vesta. Além de emitir campos defensivos, reage emocionalmente às situações de risco:
+                    sua luz fica mais intensa quando Emily está ferida ou com pouca energia. É considerado o “coração”
+                    entre os Companions.</p>
+            </div>
+            <div class="borda-drone">
+                <img src="img/Drones_Laser/companionVErmelho.png" alt="">
+                <img src="img/Drones_Laser/bulletNPCvermelho.png" alt="">
+                <p><strong>Kagero</strong> (陽炎)</p>
+                <p>Discreto, silencioso e letal.
+                    Kagero foi criado para infiltração e ataques rápidos em distâncias curtas. Seus emissores de
+                    camuflagem temporal permitem que ele distorça sua presença por frações de segundo — tempo suficiente
+                    para neutralizar inimigos que tentam flanquear Emily. É o mais agressivo do grupo, sempre à caça da
+                    próxima ameaça.</p>
+            </div>
+            <div class="borda-drone">
+                <img src="img/Drones_Laser/companionBranco.png" alt="">
+                <img src="img/Drones_Laser/laserCompBranco.png" alt="">
+                <p><strong>Hikari </strong>(光)</p>
+                <p>Leve, veloz e sempre brilhante.
+                    Hikari foi projetado para navegar por ambientes instáveis, iluminando rotas e revelando ameaças
+                    camufladas. Ele emite pulsos fotônicos que restauram parte dos sensores das armas de Emily,
+                    funcionando quase como um feixe de luz em zonas mortas. Seu comportamento lembra o de um
+                    pequeno protetor curioso.</p>
+            </div>
+        </section>
+
+        <!-- GALERIA -->
+        <section class="galeria">
+            <div class="galeria-borda">
+                <img src="img/EmilyiMG.png" alt="">
+                <img src="img/galaxiaVermalha.png" alt="">
+                <img src="img/lain42-export.png" alt="">
+                <img src="img/planeta_vermelho.png" alt="">
+                <img src="img/saturnoEsquerdo.png" alt="">
+                <img src="img/Alien_100Laranja.png" alt="">
+                <img src="img/MeganPersonagem300.png" alt="">
+                <img src="img/robo_ferro1.png" alt="">
+                <img src="img/pequeno_robo_idle3.png" alt="">
+                <img src="img/Bear-NPC.png" alt="">
+                <img src="img/moscaIndex.png" alt="">
+                <img src="img/alien-roxo_300.png" alt="">
+
+            </div>
+        </section>
+
+        <!-- PUBLISHER -->
+        <section class="publisher">
+            <div class="publisher-cont">
+                <img src="img/publisher/dangenEntertaiment300.png" alt="">
+                <div class="publisher-text">
+                    <h3>Quem é a DANGEN Entertainment</h3>
+
+                    <p>A DANGEN Entertainment é uma publisher indie baseada em Osaka, no Japão.</p>
+                    <p>O nome “DANGEN” (断言) significa algo como “palavras de convicção” em japonês — eles se comprometem
+                        muito
+                        com projetos indie.</p>
+                    <p>A equipe da DANGEN é multilíngue e formada por pessoas com experiência em desenvolvimento,
+                        localização,
+                        programação, QA, marketing e música.</p>
+                    <p>Eles são publishers registrados nas principais plataformas: PlayStation, Nintendo, Xbox e Steam,
+                        o
+                        que
+                        permite que os jogos dos desenvolvedores sejam lançados em múltiplas plataformas com suporte
+                        profissional.</p>
+                    <a href="https://dangenentertainment.com/" target="_blank" style="color: #60ff40;">Site da
+                        Publisher</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="autor">
+            <div class="autor-img">
+                <img src="img/augusto1x1.png" alt="">
+            </div>
+
+            <div class="autor-text">
+                <h3>Criador de Sky Nexus</h3>
+
+                <p>Meu nome é Augusto, desenvolvi esse universo pensando na imensidão de possibilidades que existe nos
+                    segredos do incompreensível, a vastidão do cosmo me fascina.. Gosto de ler filosofia — entre esses
+                    vários escritores, prefiro Sócrates e Platão; George
+                    Orwell e Franz Kafka também são bons.
+                    Meu sonho é conseguir realizar vários pequenos sonhos. E a vida é algo que, mesmo eterna e
+                    incompreensível e merece ser vivida.
+
+                </p>
+                <p>
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </p>
+
+            </div>
+        </section>
+
+        <footer class="footer-back">
+            <nav class="footer">
+                <img src="img/particulas/aether-bloom.png" alt="">
+                <img src="img/E10plus.png" alt="">
+                <img src="img/SKY NEXUS.png" alt="">
+            </nav>
+            <div class="footer-text">
+                <div class="footer-text-um">
+                    <p>Fantasy Violence,</p>
+                    <p>Alcohol Reference,</p>
+                    <p>Mild Language</p><br>
+                </div>
+                <p>www.facebook.com/skynexus.com</p>
+                <p>Sky Nexus © Augusto Ramos 2023-2025. All rights reserved.v</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        const texto = "Bem-vindo ao Sky Nexus — prepare-se para a missão.";
+        const elemento = document.getElementById("typewriter");
+        let index = 0;
+
+        function digitar() {
+            if (index < texto.length) {
+                elemento.textContent += texto.charAt(index);
+                index++;
+                setTimeout(digitar, 70);
+            } else {
+                // Após terminar, espera 1.5s e reinicia
+                setTimeout(() => {
+                    elemento.textContent = "";
+                    index = 0;
+                    digitar();
+                }, 1500);
+            }
+        }
+
+        digitar();
+    </script>
+
+</body>
+
+</html>

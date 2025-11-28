@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Zero — Em Construção</title>
+
+    <style>
+        /* ===== Fonte Sci-Fi ===== */
+        @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ===== Fundo espacial animado ===== */
+        body {
+            font-family: 'Oxanium', sans-serif;
+            color: #e6f3ff;
+            overflow: hidden;
+            height: 100vh;
+            background: #0d0f17;
+        }
+
+        /* Estrelas */
+        .stars,
+        .stars2,
+        .stars3 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-repeat: repeat;
+            z-index: -3;
+        }
+
+        .stars {
+            background-image: url('https://i.imgur.com/lP8aL5b.png');
+            animation: moveStars 60s linear infinite;
+        }
+
+        .stars2 {
+            background-image: url('https://i.imgur.com/lP8aL5b.png');
+            animation: moveStars 120s linear infinite;
+            opacity: 0.5;
+        }
+
+        .stars3 {
+            background-image: url('https://i.imgur.com/lP8aL5b.png');
+            animation: moveStars 180s linear infinite;
+            opacity: 0.2;
+        }
+
+        @keyframes moveStars {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: -3000px 3000px;
+            }
+        }
+
+        /* ===== Container central ===== */
+        .container {
+            text-align: center;
+            padding: 40px;
+            max-width: 800px;
+            margin: auto;
+            margin-top: 13vh;
+            backdrop-filter: blur(4px);
+            animation: fadeIn 1.2s ease;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #7cc7ff;
+            text-shadow: 0 0 20px #00aaff, 0 0 40px #0066cc;
+            margin-bottom: 18px;
+        }
+
+        p {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            margin-top: 8px;
+            opacity: 0.9;
+            text-shadow: 0 0 8px #002b40;
+        }
+
+        .mini-info {
+            margin-top: 25px;
+            font-size: 1.2rem;
+            color: #a1d8ff;
+            text-shadow: 0 0 10px #3b8bd1;
+        }
+
+        /* ===== Loader neon ===== */
+        .loading {
+            margin: 35px auto 0;
+            width: 65px;
+            height: 65px;
+            border: 6px solid rgba(0, 90, 140, 0.3);
+            border-top: 6px solid #7cc7ff;
+            border-radius: 50%;
+            animation: spin 1.1s linear infinite, glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px #0077cc;
+            }
+
+            to {
+                box-shadow: 0 0 25px #00c3ff;
+            }
+        }
+
+        /* ===== Botão voltar ===== */
+        .btn {
+            margin-top: 40px;
+            display: inline-block;
+            padding: 14px 28px;
+            border: 2px solid #7cc7ff;
+            color: #7cc7ff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            transition: 0.25s;
+            text-shadow: 0 0 10px #1e90ff;
+        }
+
+        .btn:hover {
+            background: #7cc7ff;
+            color: #0d0f17;
+            box-shadow: 0 0 20px #00c3ff;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Fundo espacial animado -->
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+
+    <div class="container">
+        <h1>Sky Zero — Em Construção</h1>
+
+        <p>Estamos desenvolvendo uma experiência intensa e futurista, com ação,
+            naves, tecnologia avançada e uma história profunda.</p>
+
+        <p class="mini-info"><strong>A mini versão jogável estará disponível em um futuro breve.</strong></p>
+
+        <div class="loading"></div>
+
+        <a href="index.html" class="btn">Voltar ao site</a>
+    </div>
+
+</body>
+
+</html>
