@@ -204,6 +204,8 @@ header{
  z-index: 20;
  font-weight: 900;
  font-family: 'Orbitron';
+ /*BRILHO Neon*/
+ text-shadow: 0 0 20px #00aaff, 0 0 40px #0066cc;
 
 }
 .bandeiras{
@@ -225,9 +227,11 @@ header{
 }
 h1{
    z-index: 20;
+    text-shadow: 0 0 20px #00aaff00, 0 0 40px #0066cc00;
 }
 h2{
    font-size: 5rem;
+    text-shadow: 0 0 20px #00aaff00, 0 0 40px #0066cc00;
 }
 .video-index{
   width: 100%;
